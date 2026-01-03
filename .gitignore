@@ -1,0 +1,15 @@
+# Ignore large sequencing data files
+data/*.fastq
+data/*.fastq.gz
+data/*.bam
+data/*.sam
+
+results/assessment/busco_ecoli
+
+# But allow metadata/documentation
+!data/*.md
+!data/*.txt*.fastq
+
+#Ignore large assembly data files
+*.bin
+*.gfa
