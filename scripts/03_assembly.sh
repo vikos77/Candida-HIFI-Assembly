@@ -22,3 +22,18 @@ if [ $? -ne 0 ]; then
 fi
 
 echo "Assembly completed"
+
+# Convert GFA to FASTA
+# hifiasm outputs multiple files:
+# - .p_ctg.gfa = primary contigs (what we want)
+#
+# GFA format has:
+# - S lines: contig sequences
+# - L lines: links between contigs (topology)
+#
+# Extract only sequences (S lines) for downstream analysis
+
+echo "Converting GFA to FASTA..."
+awk '/^S/{print ">"$2; print $3}' \
+    ../results/assembly/candida_hifiasm.p_ctg.gfa \
+    > ../results/assembly/primary.fasta
