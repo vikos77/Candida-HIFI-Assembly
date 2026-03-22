@@ -1,0 +1,1112 @@
+/home/vicky/miniconda3/envs/longread-assembly/bin/quast.py ../results/assembly/primary.fasta --glimmer -o ../results/assembly/quast_results
+
+Version: 5.3.0
+
+System information:
+  OS: Linux-6.14.0-37-generic-x86_64-with-glibc2.39 (linux_64)
+  Python version: 3.9.23
+  CPUs number: 8
+
+Started: 2026-01-06 22:05:36
+
+Logging to /home/vicky/candida_diploid_assembly/results/assembly/quast_results/quast.log
+NOTICE: Maximum number of threads is set to 2 (use --threads option to set it manually)
+
+CWD: /home/vicky/candida_diploid_assembly/scripts
+Main parameters: 
+  MODE: default, threads: 2, min contig length: 500, min alignment length: 65, min alignment IDY: 95.0, \
+  ambiguity: one, min local misassembly length: 200, min extensive misassembly length: 1000
+
+Contigs:
+  Pre-processing...
+  ../results/assembly/primary.fasta ==> primary
+
+2026-01-06 22:05:39
+Running Basic statistics processor...
+  Contig files: 
+    primary
+  Calculating N50 and L50...
+    primary, N50 = 1247647, L50 = 6, auN = 1298668.3, Total length = 22777304, GC % = 35.13, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /home/vicky/candida_diploid_assembly/results/assembly/quast_results/basic_stats/Nx_plot.pdf
+  Drawing cumulative plot...
+    saved to /home/vicky/candida_diploid_assembly/results/assembly/quast_results/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /home/vicky/candida_diploid_assembly/results/assembly/quast_results/basic_stats/GC_content_plot.pdf
+  Drawing primary GC content plot...
+    saved to /home/vicky/candida_diploid_assembly/results/assembly/quast_results/basic_stats/primary_GC_content_plot.pdf
+Done.
+
+2026-01-06 22:05:41
+Running GlimmerHMM...
+  primary
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/0.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/0.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/1.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/1.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/2.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/2.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/3.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/3.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/4.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/4.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/5.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/5.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/6.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/6.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/7.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/7.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/8.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/8.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/9.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/9.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/10.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/10.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/11.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/11.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/12.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/12.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/13.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/13.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/14.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/14.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/15.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/15.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/16.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/16.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/17.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/17.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/18.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/18.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/19.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/19.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/20.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/20.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/21.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/21.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/22.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/22.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/23.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/23.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/24.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/24.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/25.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/25.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/26.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/26.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/27.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/27.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/28.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/28.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/29.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/29.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/30.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/30.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/31.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/31.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/32.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/32.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/33.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/33.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/34.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/34.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/35.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/35.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/36.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/36.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/37.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/37.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/38.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/38.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/39.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/39.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/40.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/40.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/41.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/41.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/42.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/42.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/43.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/43.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/44.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/44.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/45.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/45.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/46.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/46.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/47.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/47.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/48.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/48.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/49.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/49.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/50.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/50.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/51.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/51.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/52.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/52.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/53.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/53.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/54.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/54.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/55.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/55.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/56.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/56.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/57.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/57.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/58.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/58.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/59.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/59.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/60.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/60.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/61.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/61.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/62.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/62.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/63.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/63.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/64.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/64.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/65.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/65.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/66.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/66.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/67.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/67.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/68.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/68.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/69.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/69.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/70.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/70.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/71.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/71.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/72.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/72.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/73.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/73.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/74.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/74.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/75.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/75.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/76.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/76.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/77.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/77.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/78.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/78.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/79.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/79.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/80.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/80.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/81.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/81.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/82.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/82.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/83.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/83.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/84.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/84.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/85.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/85.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/86.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/86.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/87.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/87.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/88.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/88.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/89.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/89.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/90.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/90.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/91.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/91.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/92.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/92.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/93.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/93.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/94.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/94.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/95.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/95.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/96.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/96.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/97.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/97.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/98.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/98.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/99.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/99.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/100.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/100.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/101.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/101.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/102.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/102.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/103.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/103.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/104.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/104.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/105.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/105.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/106.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/106.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/107.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/107.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/108.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/108.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/109.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/109.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/110.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/110.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/111.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/111.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/112.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/112.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/113.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/113.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/114.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/114.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/115.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/115.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/116.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/116.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/117.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/117.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/118.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/118.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/119.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/119.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/120.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/120.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/121.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/121.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/122.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/122.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/123.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/123.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/124.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/124.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/125.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/125.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/126.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/126.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/127.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/127.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/128.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/128.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/129.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/129.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/130.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/130.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/131.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/131.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/132.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/132.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/133.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/133.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/134.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/134.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/135.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/135.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/136.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/136.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/137.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/137.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/138.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/138.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/139.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/139.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/140.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/140.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/141.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/141.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/142.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/142.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/143.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/143.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/144.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/144.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/145.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/145.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/146.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/146.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/147.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/147.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/148.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/148.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/149.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/149.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/150.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/150.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/151.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/151.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/152.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/152.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/153.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/153.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/154.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/154.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/155.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/155.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/156.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/156.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/157.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/157.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/158.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/158.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/159.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/159.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/160.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/160.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/161.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/161.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/162.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/162.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/163.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/163.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/164.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/164.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/165.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/165.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/166.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/166.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/167.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/167.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/168.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/168.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/169.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/169.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/170.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/170.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/171.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/171.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/172.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/172.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/173.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/173.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/174.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/174.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/175.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/175.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/176.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/176.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/177.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/177.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/178.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/178.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/179.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/179.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/180.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/180.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/181.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/181.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/182.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/182.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/183.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/183.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/184.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/184.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/185.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/185.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/186.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/186.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/187.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/187.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/188.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/188.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/189.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/189.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/190.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/190.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/191.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/191.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/192.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/192.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/193.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/193.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/194.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/194.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/195.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/195.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/196.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/196.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/197.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/197.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/198.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/198.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/199.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/199.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/200.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/200.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/201.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/201.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/202.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/202.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/203.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/203.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/204.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/204.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/205.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/205.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/206.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/206.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/207.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/207.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    /home/vicky/miniconda3/envs/longread-assembly/bin/glimmerhmm /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/208.fasta \
+    -d /home/vicky/miniconda3/envs/longread-assembly/lib/python3.9/site-packages/quast_libs/glimmer/trained/arabidopsis \
+    -g -o /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/tmp/tmpi0htek9g/208.gff \
+    >> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr \
+    2>> /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer.stderr
+    Genes = 2974 unique, 3609 total
+    Predicted genes (GFF): /home/vicky/candida_diploid_assembly/results/assembly/quast_results/predicted_genes/primary_glimmer_genes.gff
+Done.
+
+2026-01-06 22:06:44
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating PDF with all tables and plots...
+  2 of 2: Creating Icarus viewers...
+Done
+
+2026-01-06 22:06:45
+RESULTS:
+  Text versions of total report are saved to /home/vicky/candida_diploid_assembly/results/assembly/quast_results/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /home/vicky/candida_diploid_assembly/results/assembly/quast_results/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /home/vicky/candida_diploid_assembly/results/assembly/quast_results/report.html
+  PDF version (tables and plots) is saved to /home/vicky/candida_diploid_assembly/results/assembly/quast_results/report.pdf
+  Icarus (contig browser) is saved to /home/vicky/candida_diploid_assembly/results/assembly/quast_results/icarus.html
+  Log is saved to /home/vicky/candida_diploid_assembly/results/assembly/quast_results/quast.log
+
+Finished: 2026-01-06 22:06:45
+Elapsed time: 0:01:08.800823
+NOTICEs: 1; WARNINGs: 0; non-fatal ERRORs: 0
+
+Thank you for using QUAST!

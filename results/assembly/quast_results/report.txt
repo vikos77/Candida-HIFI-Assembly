@@ -1,0 +1,30 @@
+All statistics are based on contigs of size >= 500 bp, unless otherwise noted (e.g., "# contigs (>= 0 bp)" and "Total length (>= 0 bp)" include all contigs).
+
+Assembly                        primary      
+# contigs (>= 0 bp)             209          
+# contigs (>= 1000 bp)          209          
+# contigs (>= 5000 bp)          209          
+# contigs (>= 10000 bp)         209          
+# contigs (>= 25000 bp)         190          
+# contigs (>= 50000 bp)         42           
+Total length (>= 0 bp)          22777304     
+Total length (>= 1000 bp)       22777304     
+Total length (>= 5000 bp)       22777304     
+Total length (>= 10000 bp)      22777304     
+Total length (>= 25000 bp)      22365160     
+Total length (>= 50000 bp)      16959802     
+# contigs                       209          
+Largest contig                  3233620      
+Total length                    22777304     
+GC (%)                          35.13        
+N50                             1247647      
+N90                             35024        
+auN                             1298668.3    
+L50                             6            
+L90                             128          
+# N's per 100 kbp               0.00         
+# predicted genes (unique)      2974         
+# predicted genes (>= 0 bp)     3609 + 0 part
+# predicted genes (>= 300 bp)   3137 + 0 part
+# predicted genes (>= 1500 bp)  1531 + 0 part
+# predicted genes (>= 3000 bp)  502 + 0 part 

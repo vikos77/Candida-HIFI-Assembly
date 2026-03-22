@@ -1,0 +1,21 @@
+# Ignore large sequencing data files
+data/*.fastq
+data/*.fastq.gz
+data/*.bam
+data/*.sam
+
+# Ignore large assembly output
+results/assessment/busco_candida/run_fungi_odb10/
+results/assessment/busco_candida/logs/
+results/assembly/primary.fasta
+*.bin
+*.gfa
+
+# Ignore large QUAST report formats (keep .txt and .tsv)
+*.html
+*.pdf
+*.tex
+
+# But allow metadata/documentation in data/
+!data/*.md
+!data/*.txt

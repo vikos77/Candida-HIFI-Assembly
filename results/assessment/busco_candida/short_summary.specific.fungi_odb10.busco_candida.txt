@@ -1,0 +1,30 @@
+# BUSCO version is: 5.5.0 
+# The lineage dataset is: fungi_odb10 (Creation date: 2024-01-08, number of genomes: 549, number of BUSCOs: 758)
+# Summarized benchmarking in BUSCO notation for file /home/vicky/candida_diploid_assembly/results/assembly/primary.fasta
+# BUSCO was run in mode: euk_genome_met
+# Gene predictor used: metaeuk
+
+	***** Results: *****
+
+	C:95.8%[S:95.1%,D:0.7%],F:0.3%,M:3.9%,n:758	   
+	726	Complete BUSCOs (C)			   
+	721	Complete and single-copy BUSCOs (S)	   
+	5	Complete and duplicated BUSCOs (D)	   
+	2	Fragmented BUSCOs (F)			   
+	30	Missing BUSCOs (M)			   
+	758	Total BUSCO groups searched		   
+
+Assembly Statistics:
+	209	Number of scaffolds
+	209	Number of contigs
+	22777304	Total length
+	0.000%	Percent gaps
+	1 MB	Scaffold N50
+	1 MB	Contigs N50
+
+
+Dependencies and versions:
+	hmmsearch: 3.4
+	bbtools: None
+	metaeuk: 7.bba0d80
+	busco: 5.5.0
